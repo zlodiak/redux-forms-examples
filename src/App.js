@@ -5,6 +5,7 @@ import Page1smart from './Components/Page1/Page1smart';
 import Page2smart from './Components/Page2/Page2smart';
 import Page3smart from './Components/Page3/Page3smart';
 import Page4smart from './Components/Page4/Page4smart';
+import Page5smart from './Components/Page5/Page5smart';
 import Page404 from './Components/Page404/Page404';
 
 
@@ -18,6 +19,7 @@ function App() {
         <Link to="/page2">Sync validation form</Link>        
         <Link to="/page3">Field level validation form</Link>        
         <Link to="/page4">Submit validation form</Link>        
+        <Link to="/page5">Async blur validation form</Link>        
       </header>
       <br/>
       <br/>
@@ -28,6 +30,7 @@ function App() {
         <Route exact path='/page2'    render={ () => <Page2smart/> }/>
         <Route exact path='/page3'    render={ () => <Page3smart/> }/>
         <Route exact path='/page4'    render={ () => <Page4smart/> }/>
+        <Route exact path='/page5'    render={ () => <Page5smart/> }/>
         <Route exact path='/page404'  render={ () => <Page404/> }/>
         <Redirect to='/page404' />
       </main>
