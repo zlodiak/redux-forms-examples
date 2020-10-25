@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <header>
         <Link to="/page1">Simple form</Link>
-        <Link to="/page2">Page2</Link>        
+        <Link to="/page2">Sync validation form</Link>        
       </header>
       <br/>
       <br/>

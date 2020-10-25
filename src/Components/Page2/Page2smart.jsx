@@ -1,12 +1,16 @@
-import {connect} from "react-redux";
-import { setTitleCreator } from '../../redux/appReducer';
+import ReduxSyncValidationForm from './Form';
 
-import Page2 from './Page2';
-
-const mapStateToProps = state => {
-  return {
-    title: state.appReducer.title,
+function Page2() {
+  const onSubmit = formData => {
+    console.log(formData)
   }
+  
+  return (
+    <div>
+      <h1>Sync valid form example</h1>
+      <ReduxSyncValidationForm onSubmit={ onSubmit }/>
+    </div>
+  );
 }
 
-export default connect(mapStateToProps, { setTitleCreator })(Page2);
+export default Page2;

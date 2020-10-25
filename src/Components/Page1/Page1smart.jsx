@@ -1,12 +1,17 @@
-import {connect} from "react-redux";
-import { setTitleCreator } from '../../redux/appReducer';
+import React from 'react';
+import ReduxSimpleForm from './Form';
 
-import Page1 from './Page1';
 
-const mapStateToProps = state => {
-  return {
-    title: state.appReducer.title,
+function Page1smart(props) {
+  const onSubmit = formData => {
+    console.log(formData)
   }
+
+  return (
+    <div>
+      <ReduxSimpleForm onSubmit={ onSubmit } />
+    </div> 
+  );
 }
 
-export default connect(mapStateToProps, { setTitleCreator })(Page1);
+export default Page1smart;
