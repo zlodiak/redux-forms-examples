@@ -7,6 +7,7 @@ import Page3smart from './Components/Page3/Page3smart';
 import Page4smart from './Components/Page4/Page4smart';
 import Page5smart from './Components/Page5/Page5smart';
 import InitializeFromStateForm from './Components/Page6/Page6smart';
+import Page7smart from './Components/Page7/Page7smart';
 import Page404 from './Components/Page404/Page404';
 
 
@@ -29,6 +30,7 @@ function App() {
         <Link to="/page4">Submit validation form</Link>        
         <Link to="/page5">Async blur validation form</Link>        
         <Link to="/page6">Initialize form</Link>        
+        <Link to="/page7">Array form</Link>        
       </header>
       <br/>
       <br/>
@@ -41,6 +43,7 @@ function App() {
         <Route exact path='/page4'    render={ () => <Page4smart/> }/>
         <Route exact path='/page5'    render={ () => <Page5smart/> }/>
         <Route exact path='/page6'    render={ () => <InitializeFromStateForm onSubmit={showResults}/> }/>
+        <Route exact path='/page7'    render={ () => <Page7smart/> }/>
         <Route exact path='/page404'  render={ () => <Page404/> }/>
         <Redirect to='/page404' />
       </main>
